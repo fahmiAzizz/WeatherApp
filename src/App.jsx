@@ -7,7 +7,7 @@ const App = () => {
   const [data, setData] = useState({});
   const [location, setLocation] = useState('')
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=e7f53bb9223932edd1a2c092b4dd5c34`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=e7f53bb9223932edd1a2c092b4dd5c34`
 
   const getData = async () => {
     const response = await axios.get(url);
