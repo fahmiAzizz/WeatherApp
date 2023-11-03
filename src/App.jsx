@@ -42,7 +42,7 @@ const App = () => {
         <div className='flex flex-col md:flex-row justify-between w-full p-3 mt-20 mb-0 md:mb-20'>
           <div className=''>
             <p className=' text-3xl'>{data.name}</p>
-            {data.main ? <p className='text-7xl md:text-9xl'>{data.main.temp}°F</p> : null}
+            {data.main ? <p className='text-7xl md:text-9xl'>{data.main.temp}°C</p> : null}
           </div>
           <div className='mt-40 md:mt-0 text-4xl my-auto text-center'>
             {data.weather ? <p>{data.weather[0].description}</p> : null}
